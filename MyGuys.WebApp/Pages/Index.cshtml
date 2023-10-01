@@ -1,7 +1,9 @@
 ﻿@page
+@using Microsoft.AspNetCore.Mvc.Localization;
 @model IndexModel
+@inject IViewLocalizer Localizer
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = Localizer["My Profile"];
 }
 
 <div class="text-center">
